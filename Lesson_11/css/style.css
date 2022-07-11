@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.div_container_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.div_container_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
