@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cardContainer {
+  width: 200px;
+  background-color: bisque;
+  border: 1px solid black;
+  padding: 10px;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.photo {
+  display: block;
+}
