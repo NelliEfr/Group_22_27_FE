@@ -1,0 +1,12 @@
+.card {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px dashed black;
+  border-radius: 10px;
+  background-color: azure;
+}
+
+.root {
+  display: flex;
+}

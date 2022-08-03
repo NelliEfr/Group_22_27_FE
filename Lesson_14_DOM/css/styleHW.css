@@ -1,0 +1,12 @@
+.card {
+  border: 1px dashed red;
+  padding: 10px;
+  margin: 10px;
+  background-color: azure;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.iphoneImg {
+  width: 200px;
+}

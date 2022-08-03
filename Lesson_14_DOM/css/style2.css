@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 400px;
+  background-color: beige;
+  padding: 10px;
+  margin: 10px;
+}
+
+.root {
+  display: flex;
+}
+
+.emailText {
+  display: inline;
+}
+
+.avatar {
+  display: block;
+  padding-top: 20px;
+}
