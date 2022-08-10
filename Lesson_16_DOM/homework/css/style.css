@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.form input {
+  margin: 5px 10px;
+}
+
+.form button {
+  margin: 5px 10px;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  width: 200px;
+  background-color: azure;
+}
+
+.photo {
+  width: 150px;
+  margin: 10px 0;
+}
