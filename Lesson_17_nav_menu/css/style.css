@@ -8,6 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Меню */
 a {
   text-decoration: none;
   color: black;
@@ -76,3 +77,88 @@ nav ul {
   }
 }
 
+
+/* Модальное окно */
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+
+  visibility: hidden;
+}
+
+.popup.visible {
+  visibility: visible;
+}
+
+.popup_body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_content {
+  background-color: white;
+  position: relative;
+  border-radius: 20px;
+}
+
+
+/* Форма */
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 15px;
+  margin: 20px;
+}
+
+.form_cross {
+  font-size: 20px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.form_input {
+  padding: 15px;
+  margin: 2px;
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+}
+
+.form_reset_btn {
+  font-size: 13px;
+  color: gray;
+  text-align: end;
+  padding: 20px 0;
+}
+
+.form_btn {
+  padding: 14px 25px;
+  border-radius: 55px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.submit_btn {
+  background-color: #FFE44D;
+  border: 1px solid transparent;
+}
+
+.redirect_btn {
+  background-color: transparent;
+  border: 1px solid #CFD8DC;
+}
+
+.form_title {
+  margin-bottom: 20px;
+}
