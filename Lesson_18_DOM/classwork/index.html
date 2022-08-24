@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <button class="show_text_btn">Вывести в консоль</button>
+  <input type="text" class="show_text_input">
+
+  <br><br><br>
+
+  <button class="mode_btn">Изменить фон на черный</button>
+
+  <br><br><br>
+
+  <button class="mode_btn_color">Изменить цвет фона</button>
+
+  <br><br><br>
+
+  <button class="change_text_btn">Изменить на !!!</button>
+  <input type="text" class="change_text_input" value="???">
+
+  <br><br><br>
+
+  <button
+  class="change_text_btn2">Изменить текст</button>
+  <input type="text" class="change_text_input2" value="???">
+
+  <br><br><br><hr>
+
+  <form id="add_form">
+    <label>
+      <p>Тип тега</p>
+      <input type="text" name="type">
+    </label>
+
+    <label>
+      <p>Содержимое</p>
+      <input type="text" name="content">
+    </label>
+
+    <label>
+      <p>Цвет текста</p>
+      <input type="color" name="color">
+    </label>
+    <button>Добавить</button>
+  </form>
+
+  <div class="elements_result"></div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
