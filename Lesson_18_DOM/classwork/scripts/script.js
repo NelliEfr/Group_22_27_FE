@@ -63,3 +63,62 @@ add_form_elem.addEventListener('submit', (event) => {
   elements_result.append(element);
 });
 
+
+// Cоздать кнопку с размерами 30 на 30 пикселей, при каждом нажатии увеличивать ее на 10 пикселей.
+
+let incr_btn = document.querySelector('#incr_btn');
+let incr_btn_params = 30;
+
+const incr_btn_render = (size) => {
+  incr_btn.style.width = size + 'px';
+  incr_btn.style.height = size + 'px';
+}
+
+incr_btn_render(incr_btn_params);
+
+incr_btn.addEventListener('click', () =>{
+  incr_btn_params += 10;
+  incr_btn_render(incr_btn_params);
+});
+
+
+// Cоздать кнопку, у которой при клике рандомно меняется цвет заднего фона
+
+const random_btn = document.querySelector('#random_btn');
+
+const get_color = () => Math.round(Math.random() * 255);
+
+random_btn.addEventListener('click', (event) => {
+  event.target.style.backgroundColor = `rgb(${get_color()}, ${get_color()}, ${get_color()})`;
+})
+
+// Создать генератор бросаемых костей (рандомно вычисляется два числа от 1 до 6 и выводятся в интерфейс).
+
+const game_btn = document.querySelector('#game_btn');
+const game_result = document.querySelector('#game_result');
+
+const get_number = () => Math.round(Math.random() * 5 + 1);
+
+// Math.round(Math.random() * 5) => 0 - 5
+// Math.round(Math.random() * 5 + 1) => 1 - 6
+
+game_btn.addEventListener('click', () => {
+  game_result.innerText = `${get_number()} X ${get_number()}`
+});
+
+
+// Создать слайдер фотографий (при клике на фото оно должно меняться на одно из массива).
+const photos = [
+'https://reqres.in/img/faces/1-image.jpg',
+'https://reqres.in/img/faces/2-image.jpg',
+'https://reqres.in/img/faces/3-image.jpg',
+'https://reqres.in/img/faces/4-image.jpg',
+'https://reqres.in/img/faces/5-image.jpg'
+]
+
+const slider = document.querySelector('#slider');
+let photoIndex = 0;
+
+slider.addEventListener('click', (event) => {
+  event.target.src = photos[photoIndex++ % photos.length]
+});
