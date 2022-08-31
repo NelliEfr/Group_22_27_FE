@@ -21,3 +21,5 @@ const [left_button, right_button] = document.querySelectorAll('.triggers button'
 left_button.addEventListener('click', () => request(--id_num));
 right_button.addEventListener('click', () => request(++id_num));
 
+//ДЗ: Зациклить индексы пользователей. Если индекс доходит до 11, то присвоить 0. Если доходит до -1, то присвоить 10.
+
