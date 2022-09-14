@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid_container_2 div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* Layout - определение сетки */
+
+.grid_container {
+  display: grid;
+  grid-template: repeat(2, 100px) / repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px); */
+
+  gap: 10px;
+  /* column-gap: 10px; */
+  /* row-gap: 10px; */
+}
+
+
+
+/* Имена областей */
+
+.grid_container_2 {
+  display: grid;
+  grid-template: 
+  [start] 'header header' 100px [row2]
+  [row2] 'sidebar content' 90vh [row3]
+  [row3] 'footer footer' 100px [row-end] / 250px 1fr;
+
+
+  /* grid-template-columns: 250px 1fr;
+  grid-template-rows: 100px 90vh 100px;
+  grid-template-areas: 
+    'header header'
+    'sidebar content'
+    'footer footer'; */
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}
