@@ -4,7 +4,24 @@ export const users = [
     firstname: 'Oleg',
     lastname: 'Orlov',
     active: true,
-    avatar: 'https://reqres.in/img/faces/1-image.jpg'
+    avatar: 'https://reqres.in/img/faces/1-image.jpg',
+    todo: [
+      {
+        id: 1,
+        title: 'Купить хлеб',
+        done: true
+      },
+      {
+        id: 2,
+        title: 'Забрать документы',
+        done: true
+      },
+      {
+        id: 3,
+        title: 'Продать хлеб дороже',
+        done: false
+      },
+    ]
   },
 
   {
@@ -21,6 +38,23 @@ export const users = [
     lastname: 'Ivanov',
     active: false,
     avatar: 'https://reqres.in/img/faces/3-image.jpg',
+    todo: [
+      {
+        id: 1,
+        title: 'Купить хлеб',
+        done: true
+      },
+      {
+        id: 2,
+        title: 'Забрать документы',
+        done: true
+      },
+      {
+        id: 3,
+        title: 'Продать хлеб дороже',
+        done: false
+      },
+    ]
   },
 
   {
@@ -28,6 +62,23 @@ export const users = [
     firstname: 'Petr',
     lastname: 'Grishin',
     active: true,
+    todo: [
+      {
+        id: 1,
+        title: 'Купить хлеб',
+        done: true
+      },
+      {
+        id: 2,
+        title: 'Забрать документы',
+        done: true
+      },
+      {
+        id: 3,
+        title: 'Продать хлеб дороже',
+        done: false
+      },
+    ]
   },
 
   {
@@ -35,5 +86,22 @@ export const users = [
     firstname: 'Nelli',
     lastname: 'Efremyan',
     active: false,
+    todo: [
+      {
+        id: 1,
+        title: 'Купить хлеб',
+        done: true
+      },
+      {
+        id: 2,
+        title: 'Забрать документы',
+        done: true
+      },
+      {
+        id: 3,
+        title: 'Продать хлеб дороже',
+        done: false
+      },
+    ]
   }
 ]
