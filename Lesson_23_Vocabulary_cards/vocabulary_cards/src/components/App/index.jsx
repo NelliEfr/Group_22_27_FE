@@ -2,6 +2,7 @@ import { words } from '../../data/words'
 import CardsContainer from '../CardsContainer'
 import Triggers from '../Triggers';
 import { useState } from 'react'
+import Form from '../Form';
 
 function App() {
   const [ cards, setCards ] = useState(words)
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div>
+      <Form />
       <CardsContainer cards={cards} />
       <Triggers change_to_rus={change_to_rus} change_to_eng={change_to_eng} />
     </div>

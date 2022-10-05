@@ -1,0 +1,17 @@
+.form input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid green;
+  border-radius: 3px;
+}
+
+.form button {
+  margin: 5px;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 70px;
+}
