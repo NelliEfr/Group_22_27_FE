@@ -1,0 +1,15 @@
+.nav_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.nav_menu {
+  list-style: none;
+  text-transform: uppercase;
+
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  gap: 68px;
+}
