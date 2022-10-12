@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './index.module.css'
 
-export default function CardItem({ id, eng, rus, lang }) {
+export default function CardItem({ id, eng, rus, lang, change_lang }) {
   const text = lang === 'rus' ? rus : eng;
 
   const card_style = {
@@ -10,7 +10,7 @@ export default function CardItem({ id, eng, rus, lang }) {
   }
 
   return (
-    <div className={s.card} style={card_style}>
+    <div className={s.card} style={card_style} onClick={() => change_lang(id)}>
       {text}
     </div>
   )
