@@ -1,0 +1,28 @@
+.about_us_section {
+  display: flex;
+  justify-content: space-between;
+  padding: 140px 0;
+}
+
+.info_text {
+  width: 445px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.info_block h2 {
+  margin: 40px 0 60px 0;
+}
+
+.info_block span {
+  color: #005FA3;
+  display: block;
+}
+
+.achievements_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 255px);
+  grid-auto-rows: 255px;
+  gap: 30px;
+}

@@ -1,0 +1,28 @@
+.about_us_card_item {
+  background-color: #EBEBEB;
+  padding: 30px 40px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about_us_card_item:hover {
+  background-color: #005FA3;
+  color: white;
+}
+
+.about_us_card_item:hover a {
+  color: white;
+}
+
+.value {
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  width: 107px;
+}
