@@ -1,0 +1,44 @@
+.contacts_form {
+  border: 1px solid white;
+  width: 540px;
+  height: 400px;
+}
+
+.contacts_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts_section {
+  background-image: url('media/background_contacts.png');
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  padding: 122px 0 140px 0;
+}
+
+.contacts_info {
+  width: 445px;
+}
+
+.contacts_info h2 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+.contacts_info p {
+  font-size: 18px;
+}
+
+.main_contacts {
+  margin-top: 60px;
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+
+.main_contacts p {
+  font-size: 21px;
+}
+
