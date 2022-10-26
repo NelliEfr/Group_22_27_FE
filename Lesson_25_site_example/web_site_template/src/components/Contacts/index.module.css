@@ -42,3 +42,19 @@
   font-size: 21px;
 }
 
+@media (max-width: 1000px){
+  .contacts_block {
+    flex-direction: column;
+    margin: 0 90px 0 90px;
+  }
+
+  .contacts_info {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .main_contacts {
+    justify-content: start;
+  }
+}
+

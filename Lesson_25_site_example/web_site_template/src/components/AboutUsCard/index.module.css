@@ -26,3 +26,14 @@
   font-weight: 700;
   width: 107px;
 }
+
+@media (max-width: 1000px) {
+  .about_us_card_item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about_us_card_item p {
+    width: 120px;
+  }
+}

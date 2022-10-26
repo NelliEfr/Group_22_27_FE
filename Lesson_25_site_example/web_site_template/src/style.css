@@ -20,3 +20,9 @@ h2 {
   color: #333333;
   font-weight: 900;
 }
+
+@media (max-width: 1000px) {
+  .subheader {
+    display: none;
+  }
+}

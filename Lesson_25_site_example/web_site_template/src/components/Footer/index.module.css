@@ -5,3 +5,9 @@
   font-size: 14px;
   font-weight: 300;
 }
+
+@media (max-width: 1000px){
+  .footer {
+    padding: 70px 90px;
+  }
+}
