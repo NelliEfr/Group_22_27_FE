@@ -4,6 +4,6 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
   padding: 45px;
 }

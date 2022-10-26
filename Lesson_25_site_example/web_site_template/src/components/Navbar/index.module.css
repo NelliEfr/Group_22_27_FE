@@ -11,7 +11,7 @@
 
   display: grid;
   grid-template-columns: repeat(5, max-content);
-  gap: 68px;
+  gap: 45px;
 }
 
 .menu_icon {

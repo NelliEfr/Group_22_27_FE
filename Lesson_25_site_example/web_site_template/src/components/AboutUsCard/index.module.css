@@ -12,8 +12,9 @@
   color: white;
 }
 
-.about_us_card_item:hover a {
+.about_us_card_item:hover button {
   color: white;
+  border-color: white;
 }
 
 .value {
