@@ -1,6 +1,7 @@
 import PostsContainer from "../PostsContainer";
 import { posts_data } from '../../data/posts'
 import { useState } from 'react'
+import AddPostForm from "../AddPostForm";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div>
+      <AddPostForm />
       <PostsContainer posts={posts} change_like={change_like} add_comment={add_comment} />
     </div>
   );
