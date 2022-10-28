@@ -12,9 +12,20 @@ function App() {
     setPosts([...posts]);
   }
 
+  const add_comment = (id, value) => {
+    const comment = {
+      id: Date.now(),
+      text: value
+    }
+
+    const target = posts.find(el => el.id === id);
+    target.comments.push(comment);
+    setPosts([...posts]);
+  }
+
   return (
     <div>
-      <PostsContainer posts={posts} change_like={change_like} />
+      <PostsContainer posts={posts} change_like={change_like} add_comment={add_comment} />
     </div>
   );
 }
