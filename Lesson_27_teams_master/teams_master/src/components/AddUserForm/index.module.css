@@ -1,0 +1,24 @@
+.user_form_container {
+  width: 80%;
+  border: 3px solid #27ae60;
+  border-radius: 10px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.user_form {
+  display: grid;
+  grid-auto-rows: 30px;
+  gap: 20px;
+}
+
+.user_form button {
+  background-color: #27ae60;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 16px;
+}
