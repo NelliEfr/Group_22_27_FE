@@ -24,9 +24,20 @@ function App() {
     setPosts([...posts]);
   }
 
+  const add_post = (title, text) => setPosts([
+    ...posts,
+    {
+      id: Date.now(),
+      title,
+      text,
+      like: false,
+      comments: []
+    }
+  ])
+
   return (
     <div>
-      <AddPostForm />
+      <AddPostForm add_post={add_post} />
       <PostsContainer posts={posts} change_like={change_like} add_comment={add_comment} />
     </div>
   );
