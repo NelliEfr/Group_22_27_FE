@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form_input {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  width: 356px;
+  height: 48px;
+  border: 1px solid #CFD8DC;
+  border-radius: 12px;
+  margin: 4px 0;
+}
+
+.form_input:focus {
+  border-color: #FFE44D;
+  outline: none;
+}
