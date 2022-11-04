@@ -5,12 +5,12 @@ import { Context } from '../../context'
 
 export default function AddUserForm() {
 
-  const { teams } = useContext(Context);
+  const { teams, add_user } = useContext(Context);
 
   const submit = event => {
     event.preventDefault();
-    const { user_name } = event.target;
-    console.log(user_name.value);
+    const { user_name, user_team } = event.target;
+    add_user(user_name.value, user_team.value);
     user_name.value = '';
   }
 
@@ -19,7 +19,7 @@ export default function AddUserForm() {
       Add user
       <form onSubmit={submit} className={s.user_form}>
         <input type='text' name='user_name' placeholder="User's name" />
-        <Select options={teams} />
+        <Select options={teams} name='user_team' />
         <button>Add user</button>
       </form>
     </div>

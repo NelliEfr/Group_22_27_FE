@@ -1,0 +1,10 @@
+.user_item {
+  width: 80%;
+  margin: 20px auto;
+  border: 3px solid #27ae60;
+  border-radius: 10px;
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+}
