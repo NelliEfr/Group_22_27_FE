@@ -24,3 +24,9 @@
   font-weight: 400;
   margin: 24px 0;
 }
+
+.error_message {
+  color: red;
+  text-align: end;
+  font-size: 12px;
+}
