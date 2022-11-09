@@ -1,8 +1,20 @@
 import FormItem from "../FormItem";
+import FormModal from "../FormModal";
+import { useState } from 'react'
+import { Context } from '../../context'
 
 function App() {
+
+  const [ modalActive, setModalActive ] = useState(false);
+
   return (
     <div>
+
+      <Context.Provider value={{ modalActive, setModalActive }}>
+        <button onClick={() => setModalActive(true)}>Open modal window</button>
+        <FormModal />
+      </Context.Provider>
+
       <FormItem 
         title={'Registration'}
         button={{submit: 'Registration', redirect: 'Login'}}
