@@ -1,9 +1,3 @@
-.contacts_form {
-  border: 1px solid white;
-  width: 540px;
-  height: 400px;
-}
-
 .contacts_block {
   display: flex;
   justify-content: space-between;
@@ -15,7 +9,7 @@
   background-position: center;
 
   color: white;
-  padding: 122px 0 140px 0;
+  padding: 122px 0 250px 0;
 }
 
 .contacts_info {

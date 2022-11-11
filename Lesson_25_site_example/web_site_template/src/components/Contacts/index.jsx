@@ -1,6 +1,7 @@
 import React from 'react'
 import s from './index.module.css'
 import { MobileOutlined, MailOutlined } from '@ant-design/icons'
+import ContactsForm from '../ContactsForm'
 
 export default function Contacts() {
   return (
@@ -16,8 +17,7 @@ export default function Contacts() {
           </div>
         </div>
 
-        <div className={s.contacts_form}></div>
-
+        <ContactsForm />
       </div>
     </section>
   )
