@@ -1,7 +1,7 @@
-import FormItem from "../FormItem";
 import FormModal from "../FormModal";
 import { useState } from 'react'
 import { Context } from '../../context'
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -11,31 +11,12 @@ function App() {
     <div>
 
       <Context.Provider value={{ modalActive, setModalActive }}>
-        <button onClick={() => setModalActive(true)}>Open modal window</button>
+        <Link to='/registration_form'>
+          <button onClick={() => setModalActive(true)}>Open modal window</button>
+        </Link>
         <FormModal />
       </Context.Provider>
-
-      <FormItem 
-        title={'Registration'}
-        button={{submit: 'Registration', redirect: 'Login'}}
-        info_text={'By registering on the site, you agree to our Rules and Privacy Policy and agree to receive newsletters.'}
-        form_type={'registration'}
-      />
-
-      <FormItem 
-        title={'Login'}
-        button={{submit: 'Login', redirect: 'Registration'}}
-        info_text={'Reset password.'}
-        form_type={'login'}
-      />
-
-      <FormItem 
-        title={'Reset password'}
-        button={{submit: 'Send'}}
-        info_text={'The temporary password is valid for 24 hours.'}
-        form_type={'reset_password'}
-        info_text_add={'To receive a temporary password, you must enter the email address you provided during registration.'}
-      />
+      
     </div>
   );
 }
