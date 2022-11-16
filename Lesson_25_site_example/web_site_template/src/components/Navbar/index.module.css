@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .nav_block {
   display: flex;
   justify-content: space-between;
@@ -25,10 +29,20 @@
   }
 
   .nav_menu {
-    display: none;
+    grid-template-columns: 1fr;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    transform: translateX(100%);
+  }
+
+  .nav_menu.active {
+    transform: translateX(0);
   }
 
   .nav_block {
     padding: 0 90px;
+    position: relative;
   }
 }
