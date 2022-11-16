@@ -2,6 +2,7 @@ import { getProducts } from '../../requests/products'
 import { useState, useEffect } from 'react'
 import ProductsContainer from '../ProductsContainer';
 import { Context } from '../../context'
+import AddProductForm from '../AddProductForm';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <Context.Provider value={{ products }}>
+        <AddProductForm />
         <ProductsContainer />
       </Context.Provider>
     </div>

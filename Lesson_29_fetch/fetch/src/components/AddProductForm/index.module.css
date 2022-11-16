@@ -1,0 +1,20 @@
+.add_product_form {
+  margin-bottom: 30px;
+}
+
+.add_product_form input {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.add_product_form button {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 16px;
+}
