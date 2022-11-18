@@ -8,13 +8,15 @@ function App() {
 
   const [ products, setProducts ] = useState([]);
 
+  const createProduct = product => setProducts(prev => [...prev, product]);
+
   useEffect(() => {
     getProducts(setProducts)
-  }, [])
+  }, []);
   
   return (
     <div>
-      <Context.Provider value={{ products }}>
+      <Context.Provider value={{ products, createProduct }}>
         <AddProductForm />
         <ProductsContainer />
       </Context.Provider>

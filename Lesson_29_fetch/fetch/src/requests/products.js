@@ -9,3 +9,15 @@ export const getProducts = (callback) => {
 // Из каждого элемента из products сформировать компонент Product внутри ProductsContainer. Вывести продукты на экран. Свойства title, description и price.
 
 // Использовать useContext
+
+export const addProduct = (body, callback) => {
+  fetch('https://dummyjson.com/products/add', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  })
+    .then(resp => resp.json())
+    .then(json => callback(json))
+}
