@@ -1,0 +1,18 @@
+.add_user_form input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 150px;
+}
+
+.add_user_form button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  width: 100px;
+  font-size: 16px;
+  background-color: green;
+  color: white;
+}

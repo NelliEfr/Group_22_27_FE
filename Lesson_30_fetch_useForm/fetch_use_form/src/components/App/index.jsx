@@ -14,9 +14,11 @@ function App() {
     getUsers(setUsers)
   }, []);
 
+  const createNewUser = user => setUsers(prev => [...prev, user]);
+
   return (
     <div>
-      <Context.Provider value={{ users }}>
+      <Context.Provider value={{ users, createNewUser }}>
         <NavMenu />
         <Routes>
           <Route path="/users_page" element={<UsersPage />} />
