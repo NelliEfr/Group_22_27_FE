@@ -1,11 +1,21 @@
 import { words } from '../../data/words'
 import CardsContainer from '../CardsContainer'
 import Triggers from '../Triggers';
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Form from '../Form';
+import { Context } from '../../context'
 
 function App() {
-  const [ cards, setCards ] = useState(words)
+  const [ cards, setCards ] = useState(words);
+
+  useEffect(() => {
+    const raw = localStorage.getItem('cards') || []
+    setCards(JSON.parse(raw))
+  }, []); // стейт отслеживать не нужно
+
+  useEffect(() => {
+    localStorage.setItem('cards', JSON.stringify(cards))
+  }, [cards]); // второй аргумент - отслеживание изменения стейта
 
   const change_to_rus = () => {
     setCards(
@@ -44,11 +54,15 @@ function App() {
     }
   ]);
 
+  const delete_card = (id) => setCards(cards.filter(el => el.id !== id));
+
   return (
     <div>
-      <Form add_card={add_card} />
-      <CardsContainer cards={cards} change_lang={change_lang} />
-      <Triggers change_to_rus={change_to_rus} change_to_eng={change_to_eng} />
+      <Context.Provider value={{ cards, add_card, change_lang, change_to_rus, change_to_eng, delete_card }}>
+        <Form />
+        <CardsContainer />
+        <Triggers />
+      </Context.Provider>
     </div>
   );
 }
