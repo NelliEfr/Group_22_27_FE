@@ -1,7 +1,7 @@
 .post_item {
   border: 1px solid black;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   margin: 10px;
   width: 400px;
   position: relative;
@@ -17,11 +17,18 @@
 
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 20px;
 }
 
 .like_btn_active {
   background-color: blue;
   border-color: blue;
   color: white;
+}
+
+.cross_icon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
 }
