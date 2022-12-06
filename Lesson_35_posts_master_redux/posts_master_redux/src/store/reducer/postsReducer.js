@@ -3,11 +3,13 @@ const defaultState = posts;
 
 const CHANGE_LIKE = 'CHANGE_LIKE';
 const ADD_POST = 'ADD_POST';
+const DELETE_POST = 'DELETE_POST';
+const DELETE_COMMENT = 'DELETE_COMMENT';
 
 export const changeLike = payload => ({ type: CHANGE_LIKE, payload });
 export const addPost = payload => ({ type: ADD_POST, payload });
-
-
+export const deletePost = payload => ({ type: DELETE_POST, payload });
+export const deleteComment = payload => ({ type: DELETE_COMMENT, payload });
 
 export const postsReducer = (state = defaultState, action) => {
   if(action.type === CHANGE_LIKE) {
@@ -21,6 +23,12 @@ export const postsReducer = (state = defaultState, action) => {
       comments: [],
       ...action.payload
     }]
+  } else if (action.type === DELETE_POST) {
+    return state.filter(el => el.id !== action.payload)
+  } else if (action.type === DELETE_COMMENT) {
+    const target_post = state.find(el => el.id === action.payload.post_id);
+    target_post.comments = target_post.comments.filter(el => el.id !== action.payload.comment_id);
+    return [...state]
   } else {
     return state
   }

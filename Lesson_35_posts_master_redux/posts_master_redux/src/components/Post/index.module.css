@@ -25,3 +25,11 @@
   border-color: blue;
   color: white;
 }
+
+.cross_icon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  margin: 0;
+}
