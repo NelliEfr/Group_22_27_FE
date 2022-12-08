@@ -1,0 +1,13 @@
+1. Уставить redux react-redux
+2. Создать store c rootReducer
+3. Обернуть App d Provider
+4. Создать productReducer и добавить его в rootReducer
+5. Создать компонент addProductForm с двумя инпутами (title, price)  при сабмите выводить в консоль объект в формате ключ: значение
+6. Создать action addProduct, прописываем логику в productReducer
+7. Импортировать action в компонент формы 
+8. Реализовать action в компоненте формы через dispatch
+9. Реализовать отображение карточек из стейта
+10. Создать basketReducer, добавить его в rootReducer
+11. Создать компоненты Basket и BasketCard
+12. Достатать стейт корзины в компоненте Basket
+13. Прописать action add_to_basket + логика

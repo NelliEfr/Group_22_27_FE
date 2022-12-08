@@ -1,0 +1,7 @@
+.product_item {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid green;
+  padding: 15px;
+  margin: 10px 0;
+}
