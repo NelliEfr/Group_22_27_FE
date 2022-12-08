@@ -2,6 +2,7 @@ import React from 'react'
 import Comment from '../Comment'
 import { deleteComment } from '../../store/reducer/postsReducer'
 import { useDispatch } from 'react-redux'
+import AddCommentForm from '../AddCommentForm';
 
 export default function CommentsContainer({ comments, post_id }) {
 
@@ -14,6 +15,7 @@ export default function CommentsContainer({ comments, post_id }) {
       {
         comments.map(el => <Comment key={el.id} {...el} delete_comment={delete_comment} post_id={post_id} />)
       }
+      <AddCommentForm post_id={post_id} />
     </div>
   )
 }
