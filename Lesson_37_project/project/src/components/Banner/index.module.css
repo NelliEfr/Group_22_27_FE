@@ -1,0 +1,10 @@
+.banner_section {
+  background-color: #A1E2EB;
+}
+
+.banner_sub_section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1380px;
+  margin: 0 auto;
+}
