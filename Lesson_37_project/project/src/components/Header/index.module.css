@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1380px;
+  margin: 19px auto;
+}
+
+.logo_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+}
+
+.nav_block {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  width: 530px;
+  gap: 57px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav_block li {
+  list-style: none;
+}
+
+.logo_block div {
+  background-color: #339933;
+  border-radius: 5px;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
