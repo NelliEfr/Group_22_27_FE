@@ -1,0 +1,5 @@
+1. Установить библиотеку react-router-dom
+2. Создать компоненты страниц: HomePage, AboutPage, CategoriesPage, NotFoundPage
+3. Создать компнент Nav со ссылками на каждую из страниц
+4. Написать функцию, которая отправляет fet get запрос по адресу https://fakestoreapi.com/products/categories и записывает полученные данные в состояние categories. 
+5. Вывести состояние categories в консоль. Убедитесь, что состояние выводится один раз
