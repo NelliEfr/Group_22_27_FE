@@ -21,9 +21,17 @@ export default function Basket() {
               {state.map(el => <BasketCard key={el.id} {...el} />)}
             </div>
             <button onClick={clear_basket}>Clear basket</button>
+            <p>
+              Total:
+              {
+                state.reduce((prev, {price, count}) => prev + price * count, 0)
+              }
+            </p>  
           </div>
         : ''
-      }     
+      } 
+
+  
     </div>
   )
 }

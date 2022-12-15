@@ -4,11 +4,13 @@ const ADD_TO_BASKET = 'ADD_TO_BASKET';
 const CLEAR_BASKET = 'CLEAR_BASKET';
 const COUNT_INCREMENT = 'COUNT_INCREMENT';
 const COUNT_DECREMENT = 'COUNT_DECREMENT';
+const DELETE_FROM_BUSKET = 'DELETE_FROM_BUSKET';
 
 export const addToBasket = payload => ({ type: ADD_TO_BASKET, payload });
 export const clearBasket = () => ({ type: CLEAR_BASKET });
 export const countIncrement = payload => ({ type: COUNT_INCREMENT, payload });
 export const countDecrement = payload => ({ type: COUNT_DECREMENT, payload });
+export const deleteFromBasket = payload => ({ type: DELETE_FROM_BUSKET, payload });
 
 const checkProduct = (state, payload) => {
   const productInState = state.find(el => el.id === payload.id); // находим элемент в стейте
@@ -40,6 +42,8 @@ export const basketReducer = (state = defaultState, action) => {
       target_card.count--
     }
     return [...state]
+  } else if (action.type === DELETE_FROM_BUSKET) {
+    return state.filter(el => el.id !== action.payload)
   } else {
     return state
   }
