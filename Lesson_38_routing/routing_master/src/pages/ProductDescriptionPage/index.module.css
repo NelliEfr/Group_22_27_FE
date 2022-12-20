@@ -1,0 +1,33 @@
+.product_descr {
+  display: flex;
+  gap: 100px;
+}
+
+.product_descr img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back_btn {
+  padding: 15px;
+  border: 2px solid #34495e;
+  border-radius: 10px;
+  color: #34495e;
+  font-size: 18px;
+  background-color: transparent;
+  width: 150px;
+  margin: 50px 0;
+  cursor: pointer;
+}
+
+.back_btn:hover {
+  color: white;
+  background-color: #34495e;
+}

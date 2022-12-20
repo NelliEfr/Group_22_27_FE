@@ -3,4 +3,13 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }

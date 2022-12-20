@@ -4,6 +4,7 @@ import AboutPage from './pages/AboutPage';
 import CategoriesPage from './pages/CategoriesPage';
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
+import ProductDescriptionPage from './pages/ProductDescriptionPage';
 import ProductsPage from './pages/ProductsPage';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='about' element={<AboutPage />} />
           <Route path='categories' element={<CategoriesPage />} />
           <Route path='categories/:category' element={<ProductsPage />} />
+          <Route path='product/:id' element={<ProductDescriptionPage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Route>
       </Routes>
