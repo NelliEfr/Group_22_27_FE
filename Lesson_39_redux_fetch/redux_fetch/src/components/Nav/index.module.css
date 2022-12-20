@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  gap: 100px;
+  background-color: #34495e;
+  font-size: 25px;
+}
