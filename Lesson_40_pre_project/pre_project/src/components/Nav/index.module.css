@@ -1,0 +1,21 @@
+.nav_section {
+  background-color: #34495E;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.nav_menu a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 4px;
+  margin: 10px 0;
+  width: 95px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}

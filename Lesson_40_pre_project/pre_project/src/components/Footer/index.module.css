@@ -1,0 +1,12 @@
+.footer_section {
+  background-color: #34495E;
+}
+
+.footer_block {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 13px 0;
+}

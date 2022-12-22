@@ -1,0 +1,16 @@
+.categories_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 53px;
+  column-gap: 92px;
+  row-gap: 38px;
+}
+
+.categories_block h1 {
+  margin: 52px 0 72px 0;
+  height: 83px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+}
