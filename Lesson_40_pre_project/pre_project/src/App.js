@@ -12,9 +12,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<CategoriesPage />} />
-          <Route path='/:category' element={<ProductsPage />} />
-          <Route path='/product/:id' element={<ProductPage />} />
-          <Route path='/cart' element={<CartPage />} />
+          <Route path=':category' element={<ProductsPage />} />
+          <Route path='product/:id' element={<ProductPage />} />
+          <Route path='cart' element={<CartPage />} />
         </Route>
       </Routes>
     </div>

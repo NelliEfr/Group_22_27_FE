@@ -1,0 +1,28 @@
+.product_card {
+  border: 2px solid black;
+  padding: 18px 16px 11px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_card img {
+  width: 170px;
+  height: 170px;
+  object-fit: contain;
+}
+
+.product_card button {
+  border: 2px solid #34495E;
+  background-color: transparent;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #34495E;
+}
+
+.product_card p {
+  padding: 15px 0;
+}

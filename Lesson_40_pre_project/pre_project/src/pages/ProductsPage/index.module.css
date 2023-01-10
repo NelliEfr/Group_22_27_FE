@@ -1,0 +1,17 @@
+.products_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 51px;
+  row-gap: 38px;
+}
+
+.products_page h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.products_page {
+  padding: 50px 0 84px 0;
+}
