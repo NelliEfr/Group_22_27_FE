@@ -21,8 +21,23 @@
   font-size: 15px;
   font-weight: 400;
   color: #34495E;
+  cursor: pointer;
+}
+
+.product_card button:hover {
+  background-color: #34495E;
+  color: white;
 }
 
 .product_card p {
   padding: 15px 0;
+}
+
+.product_card a {
+  text-decoration: none;
+  color: black;
+}
+
+.product_card a:hover {
+  color: #B12704;
 }
