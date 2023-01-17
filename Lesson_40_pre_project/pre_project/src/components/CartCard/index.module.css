@@ -1,0 +1,24 @@
+.cart_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart_card img {
+  width: 33px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.triggers {
+  display: flex;
+  flex-direction: column;
+}
+
+.triggers button {
+  height: 20px;
+  width: 23px;
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: #D9D9D9;
+}
