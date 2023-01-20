@@ -10,7 +10,9 @@ export default function ProductCard({ id, title, image, price }) {
 
   const dispatch = useDispatch();
 
-  const add_to_cart = () => dispatch(addToCart({id, title, image, price}))
+  const add_to_cart = () => dispatch(addToCart({id, title, image, price}));
+
+  const test = [];
 
   return (
     <div className={s.product_card}>
@@ -18,6 +20,7 @@ export default function ProductCard({ id, title, image, price }) {
         <img src={image} alt={title} />
         <p>{ title }</p>
         <p>Price: { price }$</p>
+        <p>{test[0]}</p>
       </Link>
       <button onClick={add_to_cart}>Add to cart</button>
     </div>

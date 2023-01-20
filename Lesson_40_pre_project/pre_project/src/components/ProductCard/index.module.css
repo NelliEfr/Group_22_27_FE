@@ -22,6 +22,11 @@
   font-weight: 400;
   color: #34495E;
   cursor: pointer;
+  display: none;
+}
+
+.product_card:hover button {
+  display: flex;
 }
 
 .product_card button:hover {

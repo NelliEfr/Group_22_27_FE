@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { load_product } from '../../requests/product_req';
 import { useDispatch, useSelector } from 'react-redux';
+import { addToCart } from '../../store/reducers/cart';
 import s from './index.module.css'
 
 export default function ProductPage() {
@@ -10,6 +11,12 @@ export default function ProductPage() {
   const product = useSelector(state => state.product);
 
   const { id } = useParams();
+
+  const product_id = product.id;
+
+  const add_to_cart = () => dispatch(addToCart({id: product_id, title, image, price}))
+
+  // let product_id = product.map(el => el.id);
 
   useEffect(() => {
     dispatch(load_product(id))
@@ -27,7 +34,7 @@ export default function ProductPage() {
           <p>
             <span>Price:</span> {price}
           </p>
-          <button>Add to cart</button>
+          <button onClick={add_to_cart}>Add to cart</button>
         </div>
       </div>
     </div>

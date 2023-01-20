@@ -38,7 +38,7 @@ export default function ProductsPage() {
         <div>
           <span>Цена:</span>
           <form onSubmit={search_price} className={s.search_form}>
-            <input type='number' name='min' placeholder='from' />
+            <input type='number' name='min' placeholder='from' min='0' />
             <input type='number' name='max' placeholder='to' />
             <button>search</button>
           </form>
