@@ -1,0 +1,33 @@
+.header {
+  background-color: rgba(36, 28, 21, 0.3);
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.globe_icon {
+  color: white;
+}
+
+.info_block {
+  display: flex;
+  gap: 20px;
+  text-align: right;
+  align-items: center;
+}
+
+.search_btn {
+  color: #004E56;
+  font-size: 16px;
+  cursor: pointer;
+}
