@@ -3,6 +3,6 @@ import s from './index.module.css'
 
 export default function Button() {
   return (
-    <button>Sign up</button>
+    <button className={s.sign_up_btn}>Sign up</button>
   )
 }

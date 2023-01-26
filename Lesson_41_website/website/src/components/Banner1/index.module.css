@@ -1,0 +1,22 @@
+.banner1 {
+  background-color: rgba(36, 28, 21, 0.3);
+}
+
+.banner1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.banner1 h2 {
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.banner1 p {
+  font-size: 24px;
+  margin: 20px 0 40px 0;
+  max-width: 745px;
+  text-align: center;
+}

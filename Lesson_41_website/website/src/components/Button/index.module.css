@@ -1,0 +1,9 @@
+.sign_up_btn {
+  background-color: #FFE01B;
+  border-radius: 26px;
+  width: 96px;
+  height: 43px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}

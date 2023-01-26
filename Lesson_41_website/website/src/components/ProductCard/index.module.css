@@ -1,0 +1,51 @@
+.img_block {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 22px;
+}
+
+.img_block button {
+  position: absolute;
+  bottom: 15px;
+  left: 103px;
+  background-color: #F6F6F4;
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.img_block:hover button {
+  opacity: 1;
+}
+
+.descr_block {
+  padding: 20px 16px;
+}
+
+.descr_block button {
+  border-color: transparent;
+  background-color: transparent;
+  margin: 30px 0 0 24px;
+}
+
+.color1 {
+  background-color: #D99536;
+}
+
+.color2 {
+  background-color: #E7B75F;
+}
+
+.color3 {
+  background-color: #FDF8EA;
+}
+
+.color4 {
+  background-color: white;
+}
+
